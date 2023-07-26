@@ -62,12 +62,12 @@ pddlLicense = '[![License: ODbL](https://img.shields.io/badge/License-PDDL-brigh
 licenseIcon = ''
 
 function generateLicenseIcon(data) {
-  if (data.license === 'MIT') {
-    return mitLicense = licenseIcon
- } else if (data.license === 'ISC') {
-    return iscLicense = licenseIcon
+  if (data.license = 'MIT') {
+    licenseIcon = mitLicense
+ } else if (data.license = 'ISC') {
+    licenseIcon = iscLicense
  } else {
-    return pddlLicense = licenseIcon
+    licenseIcon = pddlLicense
  }
 }
 
@@ -92,7 +92,7 @@ inquirer
   - [Questions](#questions)
 
 ## Description
-${data.descripton}
+${data.description}
 
 ## Installation
   - Here is the command to start the application.
