@@ -4,7 +4,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs')
 const inquirer = require('inquirer')
-const generateMarkdown = require('./utils')
+const generateMarkdown = require('./utils/generateMarkdown')
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -41,7 +41,7 @@ const questions = [
   {
     type: 'input',
     message: 'Who contributed to this project?',
-    name: 'contributions',
+    name: 'contributing',
   },
   {
     type: 'input',
@@ -52,6 +52,7 @@ const questions = [
     type: 'list',
     message: 'What license should be included on this project?',
     name: 'license',
+    choices: ['MIT', 'GNU GPLv3', 'Mozilla Public License 2.0', 'N/A']
   }, 
 ];
 
